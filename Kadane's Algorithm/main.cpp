@@ -14,6 +14,9 @@ int main(){
         for(int end=st; end<size; end++){
             curr_sum += arr[end];
             max_sum = max(curr_sum,max_sum);
+            if(curr_sum<0){
+                curr_sum = 0;
+            }
         }
         // cout<<endl;
 
